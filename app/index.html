@@ -4,11 +4,13 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
     <title>Document</title>
     <!--build:css css/vendor.css-->
     <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
     <link rel="stylesheet" href="bower/components-font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="bower/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
     <!--endbuild-->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="http://webfonts.ru/import/ubuntu.css"/>
@@ -16,6 +18,17 @@
 </html>
 <body>
   <!--Include header-->
+  <style>
+    .head-section{
+    	clip-path: url(#head_path);
+    }
+    .slider{
+    	clip-path: url(#places_path);
+    }
+    .compare-block-head{
+    	clip-path:url(#fly_path);
+    }
+  </style>
   <svg height="0" width="0" class="clip">
     <defs>
       <clippath id="head_path" clippathunits="objectBoundingBox">
@@ -41,7 +54,7 @@
       </clippath>
     </defs>
   </svg>
-  <section class="head-section">
+  <section class="head-section"> 
     <div class="header">
       <div class="header-soc"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
       <div class="header-logo">
@@ -53,7 +66,7 @@
     </div>
     <div class="header-content">
       <div class="header-title">ИЗРАИЛЬ</div>
-      <div class="header-info">Путешествие путешествий</div>
+      <div class="header-info">Путешествие путешестви</div>
       <div class="header-icon-row">
         <div class="header-icon-el">
           <div class="header-icon-img"><img src="img/header-img-1.png" alt=""/></div>
@@ -73,7 +86,7 @@
   <section class="slider owl-carousel">
     <div class="slider-el slider-one">
       <div class="slider-cont"> 
-        <div class="slider-title">Три моря по цене одного</div>
+        <div class="slider-title">Виза в израиль не нужна</div>
         <div class="slider-text">Курорты израиля распологаются на берегах Средиземного, Красного и Мертвого морей. Путешествие в Израиль позволит побывать на каждом из них.</div>
       </div>
     </div>
@@ -85,7 +98,7 @@
     </div>
     <div class="slider-el slider-three">
       <div class="slider-cont"> 
-        <div class="slider-title">Три моря по цене одного</div>
+        <div class="slider-title">Можно говорить по-русски</div>
         <div class="slider-text">Курорты израиля распологаются на берегах Средиземного, Красного и Мертвого морей. Путешествие в Израиль позволит побывать на каждом из них.</div>
       </div>
     </div>
@@ -127,8 +140,8 @@
     </div>
   </section>
   <section class="treangle-head">
-    <div class="treangle-head-title">7 мест для посещения</div>
-    <div class="treangle-head-text">Путешествия в Извриль</div>
+    <div class="treangle-head-title">8 мест для посещения</div>
+    <div class="treangle-head-text">Путешествия в Израиль</div>
   </section>
   <section class="travel">
     <div class="travel-wraper">
@@ -136,20 +149,20 @@
         <div class="travel-head">
           <div class="travel-head-img"><img src="img/tavel-1.png" alt=""/></div>
           <div class="travel-head-info">
-            <div class="travel-head-title">Город Давида</div>
+            <div class="travel-head-title">1. ГОРОД ДАВИДА - ИЕРУСАЛИМ ПОДЗЕМНЫЙ</div>
             <div class="travel-head-wraper">
               <div class="travel-head-wraper-cont">
                 <div class="travel-head-el">
                   <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
-                  <div class="travel-head-el-text">Как хорошо в израиле</div>
+                  <div class="travel-head-el-text">Все еще ведутся раскопки и находят много нового, то есть старого. </div>
                 </div>
                 <div class="travel-head-el">
                   <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
-                  <div class="travel-head-el-text">Тут тепло </div>
+                  <div class="travel-head-el-text">Многотысячилетняя история города - почти ровесника динозавров. </div>
                 </div>
                 <div class="travel-head-el">
                   <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
-                  <div class="travel-head-el-text">Тут море</div>
+                  <div class="travel-head-el-text">Подземные тунели для романтических прогулок.</div>
                 </div>
               </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
             </div>
@@ -161,26 +174,34 @@
       <div class="travel-main-el-footer">
         <div class="travel-cont-wraper">
           <div class="travel-cont-el">
-            <div class="travel-cont-el-about">Авиабилеты в израиль </div>
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> <span>от 17 514 руб</span><span>искать на aviasales</span></a>
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
           </div>
           <div class="travel-cont-el">
-            <div class="travel-cont-el-about">Экскурсия в израеле </div>
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>Первое место</span></div><img src="img/travel-el-1-2.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but"> <span>Первое место</span></a>
+              <div class="travel-cont-el-title"> <span><b></b>
+                  <text>Горненский моностырь</text></span></div><img src="img/travel-el-1-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать про экскурсию</div></a>
           </div>
           <div class="travel-cont-el">
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>Второе место</span></div><img src="img/travel-el-1-3.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but"> <span>Второе место</span></a>
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Русское подворье </text></span></div><img src="img/travel-el-1-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать про экскурсию</div></a>
           </div>
           <div class="travel-cont-el">
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>Третье место</span></div><img src="img/travel-el-1-4.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but"> <span>Третье место</span></a>
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Прокат авто</text></span></div><img src="img/travel-el-1-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">От 24 $</div></a>
           </div>
         </div>
       </div>
@@ -192,20 +213,20 @@
         <div class="travel-head">
           <div class="travel-head-img"><img src="img/tavel-2.png" alt=""/></div>
           <div class="travel-head-info">
-            <div class="travel-head-title">Город Давида</div>
+            <div class="travel-head-title">2. ИЕРУСАЛИМ ТРЕХ РЕЛИГИЙ</div>
             <div class="travel-head-wraper">
               <div class="travel-head-wraper-cont">
                 <div class="travel-head-el">
                   <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
-                  <div class="travel-head-el-text">Как хорошо в израиле</div>
+                  <div class="travel-head-el-text">+ 25 к пониманию мировых религий.</div>
                 </div>
                 <div class="travel-head-el">
                   <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
-                  <div class="travel-head-el-text">Тут тепло </div>
+                  <div class="travel-head-el-text">Место контрастов и впечатлений. </div>
                 </div>
                 <div class="travel-head-el">
                   <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
-                  <div class="travel-head-el-text">Тут море</div>
+                  <div class="travel-head-el-text">Более миллиона записок в год оставляется на стене.</div>
                 </div>
               </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
             </div>
@@ -217,37 +238,468 @@
       <div class="travel-main-el-footer">
         <div class="travel-cont-wraper">
           <div class="travel-cont-el">
-            <div class="travel-cont-el-about">Авиабилеты в израиль </div>
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> <span>от 17 514 руб</span><span>искать на aviasales</span></a>
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
           </div>
           <div class="travel-cont-el">
-            <div class="travel-cont-el-about">Экскурсия в израеле </div>
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>Первое место</span></div><img src="img/travel-el-2-2.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but"> <span>Первое место</span></a>
+              <div class="travel-cont-el-title"> <span><b></b>
+                  <text>Русский православный Иерусалим </text></span></div><img src="img/travel-el-2-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать про экскурсию</div></a>
           </div>
           <div class="travel-cont-el">
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>Второе место</span></div><img src="img/travel-el-1-3.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but"> <span>Второе место</span></a>
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Вифлием и православный Иерусалим</text></span></div><img src="img/travel-el-2-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать про экскурсию</div></a>
           </div>
           <div class="travel-cont-el">
             <div class="travel-cont-el-img">
-              <div class="travel-cont-el-title"> <span>Третье место</span></div><img src="img/travel-el-1-4.png" alt=""/>
-            </div><a href="#" class="travel-cont-el-but"> <span>Третье место</span></a>
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Аркадия HOTEL Be-Moshava</text></span></div><img src="img/travel-el-2-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">От 180 $</div></a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <section class="travel">
+    <div class="travel-wraper">
+      <div class="travel-main-cont">
+        <div class="travel-head">
+          <div class="travel-head-img"><img src="img/tavel-3.png" alt=""/></div>
+          <div class="travel-head-info">
+            <div class="travel-head-title">3. ИЕРУСАЛИМ - ХРИСТИАНСКИЙ ВИФЛИЕМ</div>
+            <div class="travel-head-wraper">
+              <div class="travel-head-wraper-cont">
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
+                  <div class="travel-head-el-text">Храм Рождества Христова.</div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
+                  <div class="travel-head-el-text">Храм Гроба Господня. </div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
+                  <div class="travel-head-el-text">Гевсиманский сад.</div>
+                </div>
+              </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-main-el-wraper">
+      <div class="travel-main-el-footer">
+        <div class="travel-cont-wraper">
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span><b></b>
+                  <text>City Center </text></span></div><img src="img/travel-el-3-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">от 5 638 руб</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Dan Panorama </text></span></div><img src="img/travel-el-3-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">от 11 770 руб</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>360 Suitop</text></span></div><img src="img/travel-el-3-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">от 10 149 руб</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="travel">
+    <div class="travel-wraper">
+      <div class="travel-main-cont">
+        <div class="travel-head">
+          <div class="travel-head-img"><img src="img/tavel-4.png" alt=""/></div>
+          <div class="travel-head-info">
+            <div class="travel-head-title">4. КРАСНЫЙ КАНЬОН ЭЛАЙТ</div>
+            <div class="travel-head-wraper">
+              <div class="travel-head-wraper-cont">
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
+                  <div class="travel-head-el-text">Рядом бегают олени и даманы.</div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
+                  <div class="travel-head-el-text">Марсианские пейзажи – почувствуй себя Мэттом Деймоном. </div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
+                  <div class="travel-head-el-text">Таки бесплатный вход.</div>
+                </div>
+              </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-main-el-wraper">
+      <div class="travel-main-el-footer">
+        <div class="travel-cont-wraper">
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span><b></b>
+                  <text>Петра 3-х дневный тур </text></span></div><img src="img/travel-el-4-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">от 5 638 руб</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Прокат авто</text></span></div><img src="img/travel-el-4-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">От 24 $</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Экскурсия на завод эйладского камня</text></span></div><img src="img/travel-el-4-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Бесплатно</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="travel">
+    <div class="travel-wraper">
+      <div class="travel-main-cont">
+        <div class="travel-head">
+          <div class="travel-head-img"><img src="img/tavel-5.png" alt=""/></div>
+          <div class="travel-head-info">
+            <div class="travel-head-title">5. ГОРЯЧИЕ ИСТОЧНИКИ ХАМАТ ГАДЕР</div>
+            <div class="travel-head-wraper">
+              <div class="travel-head-wraper-cont">
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
+                  <div class="travel-head-el-text">Можно посмотреть на живых крокодилов.</div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
+                  <div class="travel-head-el-text">Терапевтический эффект популярен еще со времен римля. </div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
+                  <div class="travel-head-el-text">Танцующие бабуины и говорящие попугаи развлекают гостей.</div>
+                </div>
+              </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-main-el-wraper">
+      <div class="travel-main-el-footer">
+        <div class="travel-cont-wraper">
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span><b>Парк утопия </b>
+                  <text>Тропики в центре Израиля,батанический сад</text></span></div><img src="img/travel-el-5-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать больше</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b>Сафари</b>
+                  <text>Зоологический центр в Рамат-Гане</text></span></div><img src="img/travel-el-5-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">от 7 189 руб</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b>Хамат Гадер </b>
+                  <text>Термальные бассейны</text></span></div><img src="img/travel-el-5-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">от 7 048 руб</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="travel">
+    <div class="travel-wraper">
+      <div class="travel-main-cont">
+        <div class="travel-head">
+          <div class="travel-head-img"><img src="img/tavel-6.png" alt=""/></div>
+          <div class="travel-head-info">
+            <div class="travel-head-title">6. ЯФФО, ТЕЛЬ-АВИВ</div>
+            <div class="travel-head-wraper">
+              <div class="travel-head-wraper-cont">
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
+                  <div class="travel-head-el-text">В двух шагах о центра Тель-Авива</div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
+                  <div class="travel-head-el-text">Древний портовый город с блекджеком и архитектурой.  </div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
+                  <div class="travel-head-el-text">Вместо названий улиц встречаются знаки Задиака и картинки животных. </div>
+                </div>
+              </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-main-el-wraper">
+      <div class="travel-main-el-footer">
+        <div class="travel-cont-wraper">
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span><b>Мини Израиль</b>
+                  <text>Крупнейший в мире парк макетов. </text></span></div><img src="img/travel-el-6-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать больше</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b>Кейсарио Акко</b>
+                  <text>Восхититесь последним рукотворным чудом света. </text></span></div><img src="img/travel-el-6-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать больше</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b>Хайфа</b>
+                  <text>Бахайский храм и столица Крестоносцев.</text></span></div><img src="img/travel-el-6-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать больше</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="travel">
+    <div class="travel-wraper">
+      <div class="travel-main-cont">
+        <div class="travel-head">
+          <div class="travel-head-img"><img src="img/tavel-7.png" alt=""/></div>
+          <div class="travel-head-info">
+            <div class="travel-head-title">7.РЫНОК ШУК КАРМЕЛЬ ТЕЛЬ-АВИВ</div>
+            <div class="travel-head-wraper">
+              <div class="travel-head-wraper-cont">
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
+                  <div class="travel-head-el-text">Рядом с рынком выступают музыканты и продаются изделия ручной работы.</div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
+                  <div class="travel-head-el-text">Заблудиться на этом рынке невозможно. </div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
+                  <div class="travel-head-el-text">Здесь встречается ценник за 1/3 килограмма.</div>
+                </div>
+              </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-main-el-wraper">
+      <div class="travel-main-el-footer">
+        <div class="travel-cont-wraper">
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span><b></b>
+                  <text>Прокат авто</text></span></div><img src="img/travel-el-7-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">От 35 $</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Переезды на Мертвое море, Эйлат и Тверию</text></span></div><img src="img/travel-el-7-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">От 45 $</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>Музей Хелены Рубинштейн</text></span></div><img src="img/travel-el-7-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать больше</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="travel">
+    <div class="travel-wraper">
+      <div class="travel-main-cont">
+        <div class="travel-head">
+          <div class="travel-head-img"><img src="img/tavel-8.png" alt=""/></div>
+          <div class="travel-head-info">
+            <div class="travel-head-title">8.МЕРТВОЕ МОРЕ</div>
+            <div class="travel-head-wraper">
+              <div class="travel-head-wraper-cont">
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-1.png" alt=""/></div>
+                  <div class="travel-head-el-text">Вода так выталкивает, что по ней практически можно ходить.</div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-2.png" alt=""/></div>
+                  <div class="travel-head-el-text">Лечебную рязь можно забрать с собой домой. </div>
+                </div>
+                <div class="travel-head-el">
+                  <div class="travel-head-el-icon"><img src="img/travel-icon-3.png" alt=""/></div>
+                  <div class="travel-head-el-text">Это единственное в мире место с особым сочетанием целебных достоинств.</div>
+                </div>
+              </div><a href="#" class="travel-head-button">Подробно об экскурсии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-main-el-wraper">
+      <div class="travel-main-el-footer">
+        <div class="travel-cont-wraper">
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Авиабилеты в Израиль </div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span>из Санкт-Петербурга в Тель-Авив</span></div><img src="img/travel-el-1-1.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but travel-cont-el-but-active"> 
+              <div class="travel-cont-el-but-text">от 17 514 руб</div>
+              <div class="travel-cont-el-but-text">искать на aviasales</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-about">Экскурсия в Израиль</div>
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span><b></b>
+                  <text>Крепость Массада</text></span></div><img src="img/travel-el-8-2.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">от 9358 рублей</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b></b>
+                  <text>СПА-комплекс Ейн-геди</text></span></div><img src="img/travel-el-8-3.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать больше</div></a>
+          </div>
+          <div class="travel-cont-el">
+            <div class="travel-cont-el-img">
+              <div class="travel-cont-el-title"> <span> <b>Ерехон</b>
+                  <text>Монастыри Иудейской пустыни </text></span></div><img src="img/travel-el-8-4.jpg " alt=""/>
+            </div><a href="#" class="travel-cont-el-but"> 
+              <div class="travel-cont-el-but-text">Узнать больше</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer-title">Расскажите друзьям про Израиль</div>
+    <div class="footer-soc"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+  </section>
+  <div class="modal-wraper"><i class="fa fa-times"></i>
+    <div class="modal-main-cont">
+      <div class="modal-text">
+        <div class="modal-title">Описание экскурсии</div>
+        <div class="modal-content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, qui ratione. Deserunt natus quod ut eum cum voluptates, amet provident tenetur, totam, ratione obcaecati soluta. Animi voluptatibus soluta laudantium sequi odit commodi blanditiis aliquid eaque, veniam nemo quis voluptates, voluptatem minima, amet tempore dolor dolores beatae, reprehenderit. Iusto deleniti quibusdam, dolorem voluptate, autem sapiente ipsa, tempore ab omnis assumenda <br>	Animi voluptatibus soluta laudantium sequi odit commodi blanditiis aliquid eaque, veniam nemo quis voluptates, voluptatem minima, amet tempore dolor dolores beatae, reprehenderit. Iusto </div>
+        <div class="get-eks-info">Получить экскурсию</div>
+      </div>
+      <div class="modal-form">
+        <div class="modal-form-title">Заказ экскурсии</div>
+        <div class="modal-form-text">Заполните форму и наш менеджер свяжется с Вами для обсуждения подробностей</div>
+        <form action="">
+          <div class="form-wrap">
+            <div class="form-left">
+              <label>Фамилия</label>
+              <input type="text" placeholder="Ваша фамилия"/>
+              <label>Имя </label>
+              <input type="text" placeholder="Ваше имя"/>
+              <label>Телефон </label>
+              <input type="text" placeholder="Ваш телефон"/>
+              <label>E-mail </label>
+              <input type="text" placeholder="Ваш email"/>
+            </div>
+            <div class="form-right">
+              <label>Выберите желаемую дату поездки </label>
+              <input id="date" type="text"/>
+            </div>
+          </div>
+          <label class="textarea-label">Дополнительная информация(название гостиницы или место посадки)</label>
+          <textarea name="" rows="3"> </textarea>
+          <button>Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 <!--Include footer-->
 <!--build:js js/combined.js-->
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
-<!--script(src="bower/bPopup/jquery.bpopup.min.js")-->
-<script src="bower/Headhesive.js/dist/headhesive.min.js"></script>
+<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+<script src="js/moment-with-locales.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
 <!-- endbuild-->
 <script src="js/script.js"></script>

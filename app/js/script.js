@@ -33,16 +33,22 @@ $(document).ready(function(){
 
 	/* ###### init bpopup  ######*/
 	/* ###### bower i bpopup  ######*/
-	// Add class hide
-	// $('.section-main-form button').click(function(){
-	//	$('.section-modal').bPopup({
-	// 			closeClass:'section-modal-but',
-	//			position:['auto','auto'], // position center
-	//			follow: [true,false],
-	// 	}); 
-	//})
 
-
+	$('.header-title').click(function(){
+		$('.modal-wraper').bPopup({
+				closeClass:'fa-times',
+				position:['auto','auto'], // position center
+				follow: [true,false],
+		}); 
+	})
+	$('#date').datetimepicker({
+        locale: 'ru',
+        format: 'DD/MM/YYYY'
+    });
+	$('.get-eks-info').click(function(){
+		$('.modal-text').slideToggle();
+		$('.modal-form').slideToggle();
+	})
 	/* ###### init stickUp  ######*/
 	/* ###### bower i sticky  ######*/
 	/*$("#sticker").sticky({topSpacing:0});*/
@@ -58,6 +64,7 @@ $(document).ready(function(){
 	 	autoPlay : true,
 	 	singleItem:true,
 	 	animateOut: 'fadeOut',
+	 	loop:true,
 	 	nav:true,
 			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
 	 	}

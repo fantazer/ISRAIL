@@ -4,6 +4,16 @@ body
 	//Include header
 	include ./block_html/header.jade
 	include ./block_html/elements/const.jade
+	style.
+		.head-section{
+			clip-path: url(#head_path);
+		}
+		.slider{
+			clip-path: url(#places_path);
+		}
+		.compare-block-head{
+			clip-path:url(#fly_path);
+		}
 	svg.clip(height='0', width='0')
 		defs
 			clippath#head_path(clippathunits='objectBoundingBox')
@@ -20,7 +30,7 @@ body
 				path(d='M 0.5 0, 1 0.14, 1 0.86, 0.5 1, 0 0.86, 0 0.14')
 			clippath#attractions_path(clippathunits='objectBoundingBox')
 				path(d='M 0.5 0, 1 0.3, 1 1, 0 1, 0 0.3')
-	section.head-section
+	section.head-section 
 		.header
 			.header-soc
 				a(href="#")
@@ -35,7 +45,7 @@ body
 						img(src="img/header-logo-#{a+1}.png", alt="") 
 		.header-content
 			.header-title ИЗРАИЛЬ
-			.header-info Путешествие путешествий
+			.header-info Путешествие путешестви
 			.header-icon-row
 				.header-icon-el
 					.header-icon-img
@@ -53,7 +63,7 @@ body
 	section.slider.owl-carousel
 		.slider-el.slider-one
 			.slider-cont 
-				.slider-title Три моря по цене одного
+				.slider-title Виза в израиль не нужна
 				.slider-text Курорты израиля распологаются на берегах Средиземного, Красного и Мертвого морей. Путешествие в Израиль позволит побывать на каждом из них.
 		.slider-el.slider-two
 			.slider-cont 
@@ -61,7 +71,7 @@ body
 				.slider-text Курорты израиля распологаются на берегах Средиземного, Красного и Мертвого морей. Путешествие в Израиль позволит побывать на каждом из них.
 		.slider-el.slider-three
 			.slider-cont 
-				.slider-title Три моря по цене одного
+				.slider-title Можно говорить по-русски
 				.slider-text Курорты израиля распологаются на берегах Средиземного, Красного и Мертвого морей. Путешествие в Израиль позволит побывать на каждом из них.
 	
 	section.compare-block
@@ -107,8 +117,8 @@ body
 					a(href="#").compare-block-content-el-but от 26 798 руб
 
 	section.treangle-head
-			.treangle-head-title 7 мест для посещения
-			.treangle-head-text Путешествия в Извриль
+			.treangle-head-title 8 мест для посещения
+			.treangle-head-text Путешествия в Израиль
 	
 	//- for (var j = 0; j <4 ; j++)
 	- each curorts,el in curort
@@ -140,39 +150,83 @@ body
 					.travel-cont-wraper
 
 						.travel-cont-el
-							.travel-cont-el-about Авиабилеты в израиль 
+							.travel-cont-el-about Авиабилеты в Израиль 
 							.travel-cont-el-img
 								.travel-cont-el-title 
 									span из Санкт-Петербурга в Тель-Авив
-								img(src="img/travel-el-1-1.png", alt="")
+								img(src="img/travel-el-1-1.jpg ", alt="")
 							a(href="#").travel-cont-el-but.travel-cont-el-but-active 
-								span от 17 514 руб
-								span искать на aviasales
+								.travel-cont-el-but-text от 17 514 руб
+								.travel-cont-el-but-text искать на aviasales
 
 						.travel-cont-el
-							.travel-cont-el-about Экскурсия в израеле 
+							.travel-cont-el-about Экскурсия в Израиль
 							.travel-cont-el-img
 								.travel-cont-el-title 
-									span #{curorts.cardTwo}
-								img(src="img/travel-el-#{el+1}-2.png", alt="")
+									span
+										b #{curorts.cardTwoTitle}
+										text #{curorts.cardTwo}
+								img(src="img/travel-el-#{el+1}-2.jpg ", alt="")
 							a(href="#").travel-cont-el-but 
-								span #{curorts.butTwo}
-
-						.travel-cont-el
-							.travel-cont-el-img
-								.travel-cont-el-title 
-									span #{curorts.cardThree}
-								img(src="img/travel-el-1-3.png", alt="")
-							a(href="#").travel-cont-el-but 
-								span #{curorts.butThree}
+								.travel-cont-el-but-text #{curorts.butTwo}
 
 						.travel-cont-el
 							.travel-cont-el-img
 								.travel-cont-el-title 
-									span #{curorts.cardFore}
-								img(src="img/travel-el-1-4.png", alt="")
+									span 
+										b #{curorts.cardThreeTitle}
+										text #{curorts.cardThree}
+								img(src="img/travel-el-#{el+1}-3.jpg ", alt="")
 							a(href="#").travel-cont-el-but 
-								span #{curorts.butFore}
+								.travel-cont-el-but-text #{curorts.butThree}
+
+						.travel-cont-el
+							.travel-cont-el-img
+								.travel-cont-el-title 
+									span 
+										b #{curorts.cardForeTitle}
+										text #{curorts.cardFore}
+								img(src="img/travel-el-#{el+1}-4.jpg ", alt="")
+							a(href="#").travel-cont-el-but 
+								.travel-cont-el-but-text #{curorts.butFore}
+
+	section.footer
+		.footer-title Расскажите друзьям про Израиль
+		.footer-soc
+			a(href="#")
+				i.fa.fa-vk
+			a(href="#")
+				i.fa.fa-facebook
+			a(href="#")
+				i.fa.fa-twitter
+	.modal-wraper
+		i.fa.fa-times
+		.modal-main-cont
+			.modal-text
+				.modal-title Описание экскурсии
+				.modal-content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, qui ratione. Deserunt natus quod ut eum cum voluptates, amet provident tenetur, totam, ratione obcaecati soluta. Animi voluptatibus soluta laudantium sequi odit commodi blanditiis aliquid eaque, veniam nemo quis voluptates, voluptatem minima, amet tempore dolor dolores beatae, reprehenderit. Iusto deleniti quibusdam, dolorem voluptate, autem sapiente ipsa, tempore ab omnis assumenda <br>	Animi voluptatibus soluta laudantium sequi odit commodi blanditiis aliquid eaque, veniam nemo quis voluptates, voluptatem minima, amet tempore dolor dolores beatae, reprehenderit. Iusto 
+				.get-eks-info Получить экскурсию
+			.modal-form
+				.modal-form-title Заказ экскурсии
+				.modal-form-text Заполните форму и наш менеджер свяжется с Вами для обсуждения подробностей
+				form(action="")
+					.form-wrap
+						.form-left
+							label Фамилия
+							input(type="text" placeholder="Ваша фамилия")
+							label Имя 
+							input(type="text" placeholder="Ваше имя")
+							label Телефон 
+							input(type="text" placeholder="Ваш телефон")
+							label E-mail 
+							input(type="text" placeholder="Ваш email")
+						.form-right
+							label Выберите желаемую дату поездки 
+							input#date(type="text")
+					label.textarea-label Дополнительная информация(название гостиницы или место посадки)
+					textarea(name="", rows="3" ) 
+					button Оставить заявку
+
 //Include footer
 include ./block_html/script.jade
 

@@ -35,6 +35,13 @@ svg:not(:root)
 .clip
 	position absolute
 .head-section
+	+below(1024px)
+		-webkit-clip-path: none;
+		clip-path:none;
+	+below(768px)
+		height 100vh
+		flex(mid)
+		fl()
 	bgi('first-page-bg.jpg')
 	background-size cover
 	-webkit-clip-path: url(#head_path);
@@ -44,24 +51,37 @@ svg:not(:root)
 .head-section
 	position relative
 .header
+	+below(768px)
+		position absolute
+		top 0px
+		left 0px
+		width 100%
+		flex(between)
 	flex(around)
 	position relative
-	&:before
+	/*&:before
 		content ''
 		position absolute
 		width 100%
 		height 6vw
 		left 0px
-		top 0px
+		top 0px 
 		bgi('first-page-bg.jpg')
 		background-size cover
 		-webkit-filter: blur(20px);
 		filter: blur(20px);
-		z-index 1
+		z-index 1*/
 .header-soc
 	z-index 2
 	flex(mid)
+	+below(768px)
+		width 50%
+		justify-content flex-start
 	a
+		+below(768px)
+			width 30px
+			height 30px
+			font-size 20px
 		color white
 		font-size 30px
 		margin 10px
@@ -73,54 +93,81 @@ svg:not(:root)
 		display block
 		flex(mid)
 .header-logo
+	+below(768px)
+		width 30%
+		justify-content flex-end
 	z-index 2
 	flex(mid)
 .header-logo-el
 	margin 5px
-	
+	min-width 30px
 .header-content
 	flex(mid)
 	fl()
 .header-title
+	+below(768px)
+		font-size 40px
 	color white
 	font-size 10vw
 	font-weight 700
 	margin-top 3%
 .header-info
+	+below(768px)
+		font-size 18px
 	color white
 	font-size 24px
 	font-weight 400
 	margin-bottom 2%
 .header-icon-row
+	+below(1024px)
+		width 100%
+	+below(768px)
+		flex(between)
 	flex(mid)
 	margin-top 20px
 	width 70%
 .header-icon-el
+	+below(1024px)
+		margin 0px
+		flex(between)
 	flex(mid)
 	fl()
 	margin 0px 8%
 	width 33.3333%
 .header-icon-img
 	img
+		+below(768px)
+			width 40%
+			margin 0 auto
 		width 100%
 .header-icon-text
+	+below(768px)
+		font-size 12px
 	color white
 	font-size 24px
 	font-weight 700
 	margin-top 20px
 .header-but
+	+below(768px)
+		margin-top 40px
 	color white
 	font-size 24px
 	font-weight 700
 	padding 5px 30px
 	margin-top 2%
+	margin-top 2vw
 	margin-bottom 5%
+	margin-bottom 5vw
 	border-radius 20px	
 	border 1px solid white
 .slider-cont 
 	flex(mid)
 	fl()
 .slider
+	+below(1024px)
+		top 0px 
+	+below(768px)
+		height 100vh
 	position relative
 	clip-path: url(#places_path);
 	top -8vw
@@ -140,10 +187,15 @@ svg:not(:root)
 		.active
 			background white
 .slider-el
+	+below(1024px)
+		-webkit-clip-path: none;
+		clip-path:none;
 	-webkit-clip-path: url(#places_path);
+	+below(768px)
+		min-height 100vh
 	min-height 50vw
 	color #FFF
-	background-size cover
+	background-size cover!important
 	flex(mid)
 .slider-one
 	bgi('slider-item-1.jpg');
@@ -169,14 +221,29 @@ svg:not(:root)
 	right 5%
 	
 .slider-title
+	+below(768px)
+		font-size 32px
+		text-transform uppercase
+		text-align center
 	font-size 4vw
+	text-transform uppercase
 .slider-text
+	+below(768px)
+		font-size 12px
 	width 60%
 	text-align center
 	margin-top 20px
 	
-//.compare-block
+.compare-block
+	+below(768px)
+		margin-top 20px
 .compare-block-head
+	+below(1024px)
+		-webkit-clip-path: none;
+		clip-path:none
+		margin-top 0
+	+below(768px)
+		width 95% 
 	bgi('treagle-bg-2.jpg')
 	-webkit-clip-path url(#fly_path)
 	clip-path url(#fly_path)
@@ -192,52 +259,87 @@ svg:not(:root)
 	-webkit-transform translateZ(0)
 	transform translateZ(0)
 .compare-block-title
+	+below(768px)
+		font-size 20px
+		margin-bottom 10px
 	font-size: 3.75vw;
 	line-height: 4vw;
 	text-align center
 	color white
 	text-transform uppercase
 .compare-block-text
+	+below(768px)
+		font-size 12px
 	margin-top: 0.5vw;
 	font-size: 1.45vw;
 	text-align center
 	color white
 	margin-bottom 15vw
 .compare-block-content
+	+below(768px)
+		padding 30px 0px
+		width 95%	
 	width 83vw
 	margin 0 auto
 	padding 3.6vw 0 3.6vw 0
 	background white
 .compare-block-content-title
+	+below(768px)
+		font-size 20px
+		line-height 20px
 	font-size: 3.75vw;
 	line-height: 4vw;
 	text-transform uppercase
 	text-align center
 .compare-block-content-text
+	+below(768px)
+		font-size 12px
+		width 80%
+		margin 0 auto
+		margin-top 10px
 	margin-top: 0.5vw;
 	font-size: 1.45vw;
 	text-align center
 .compare-block-content-wraper
+	+below(768px)
+		fw()
+		width 90%
 	margin 0 auto
 	margin-top: 2.5vw;
 	width 80%
 	flex(between)
 	align-items flex-start
-//.compare-block-content-el
+.compare-block-content-el
+	margin 5px
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+		flex(mid)
+		fl()
 .compare-block-content-el-img
 	margin-bottom 20px
 	img
 		width 100%
 		margin 0 auto
 .compare-block-content-el-title
+	+below(768px)
+		font-size 18px
+		margin-bottom 10px
 	font-size: 2.4vw;
 	line-height: 2.4vw;
 	text-transform uppercase
 	text-align center
 .compare-block-content-el-text
+	+below(768px)
+		font-size 12px
 	font-size: 1.15vw;
 	text-align center
 .compare-block-content-el-but
+	+below(768px)
+		font-size 14px
+		padding 5px 10px
+		//height 25px
+	margin 0 auto
 	margin-top: 2vw;
 	padding: 2px 1.65vw;
 	box-sizing: border-box;
@@ -248,42 +350,63 @@ svg:not(:root)
 	font-size: 1.9vw;
 	color white
 	box-shadow 0px 4px 0px #323232
-	display inline-block
+	display block
+	
 .compare-block-content-el-active
 	.compare-block-content-el-but
 		background-color: #25d29f;
 		box-shadow 0px 4px 0px #07a979
-		
+	.compare-block-content-el-wraper
+			+below(768px)
+				height 180px
 .compare-block-content-el-wraper
+	+below(768px)
+		flex(mid)
+		fl()
+		margin-top 0
+		
 	width 100%
-	height 100%
 	height 140%
 	width 100%
 	background: rgba(7, 169, 121, 0.14);
-	left 0
 	padding 40px 0
 	margin-top -40px
 		
 .compare-block-content-el-addtext
+	+below(768px)
+		font-size 12px
 	font-size: 1vw;
 	color #34b970
 	text-align center
 	margin-top 1vw
 .compare-block-content-el-green
+	+below(768px)
+		font-size 12px
 	font-size: 1vw;
 	text-align center
 
 .treangle-head
+	+below(1024px)
+		-webkit-clip-path: none;
+		clip-path:none;
+		padding-top 5vw
+	+below(768px)
+		margin-top: 20px;
 	margin-top: 50px;
 	padding-top: 10vw;
 	-webkit-clip-path: url(#attractions_path);
 	clip-path: url(#attractions_path);
 	background white
 .treangle-head-title
+	+below(768px)
+		font-size 18px
 	font-weight: bold;
 	font-size: 3.8vw;
 	text-align center
+	text-transform uppercase
 .treangle-head-text
+	+below(768px)
+		font-size 12px
 	font-size: 1.5vw;
 	padding-bottom: 5vw;
 	text-align center
@@ -302,16 +425,27 @@ svg:not(:root)
 	background-size: cover;
 	padding-bottom 6vw
 .travel-main-cont
+	+below(1024px)
+		width 90%
 	width: 68vw;
 .travel-head
+	+below(768px)
+		fw()
 	f()
 	align-items flex-start
 	width 100%
 .travel-head-img
+	+below(768px)
+		width 100%
+		margin-bottom 20px
 	width 50%
 	img
 		width 100%
 .travel-head-info
+	+below(768px)
+		width 100%
+		flex(mid)
+		fl()
 	width 40%
 	margin-left 2%
 .travel-head-wraper-cont
@@ -319,6 +453,9 @@ svg:not(:root)
 	margin-bottom 2vw
 	border-bottom 2px solid white
 .travel-head-title
+	+below(768px)
+		font-size 18px
+		text-align center
 	font-size 2vw
 	color white
 	margin-bottom 2vw
@@ -328,11 +465,23 @@ svg:not(:root)
 	justify-content flex-start
 	margin-bottom 20px
 .travel-head-el-icon
+	width 10%
 	margin-right 20px
+	img
+		width 100%	
 .travel-head-el-text
+	+below(1024px)
+		font-size 12px
+	+below(768px)
+		font-size 14px
 	color white
+	width 90%
 	font-size 1vw
 .travel-head-button
+	+below(768px)
+		font-size 14px
+		display block
+		text-align center
 	padding 10px 20px
 	color white
 	font-size 1vw
@@ -341,36 +490,57 @@ svg:not(:root)
 .travel-cont
 	margin-top 5vw
 .travel-cont-wraper
+	+below(768px)
+		fw()
 	flex(between)
 	align-items flex-end
 .travel-cont-el
+	+below(768px)
+		width 45%
+		margin-bottom 20px
+		margin-top 20px
 	margin-top -4vw
+	width 20%
 .travel-cont-el-title
 	position absolute
 	top 10px
 	width 100%
 	flex(mid)
 	span 
+		font-size 14px
+		+below(1024px)
+			font-size 12px
 		display block
 		width 80%
 		text-align center
 		color white
+		b
+			display block
+			margin-bottom 10px
 .travel-cont-el-img
 	position relative
+	img
+		width 100%
 .travel-cont-el-but
+	+below(1024px)
+		font-size 12px
+		height 35px
+	+below(768px)
+		margin-top 10px
 	height 50px
 	border-radius: 2vw;
 	font-size: 1vw;
 	color white
-	display block
+	//display block
 	text-align center
 	background-color: #25d29f;
 	box-shadow: 0px 4px 0px #07a979;
 	width 90%
 	margin 0 auto
-	margin-top -20px
+	//margin-top -20px
 	z-index 200
-	position relative
+	margin-top 10px
+	//position relative
 	flex(mid)
 .travel-cont-el-but-active
 	background #00B0DC
@@ -382,10 +552,157 @@ svg:not(:root)
 	width 100%
 	padding-bottom 3vw
 .travel-main-el-footer
+	+below(1024px)
+		width 90%
 	width: 68vw;
 	margin 0 auto
 
 .travel-cont-el-about
+	+below(1280px)
+		font-size 12px
+	+below(768px)
+		color black
 	color white
 	margin-bottom 20px
 	text-align center
+
+.footer
+	width 100%
+	background white
+	padding-bottom 20px
+.footer-title
+	+below(768px)
+		font-size 20px
+	text-align center
+	color #00b0dc
+	font-family Ubuntu
+	font-size 32px
+	font-weight 700
+	line-height 43px
+	margin-bottom 20px
+.footer-soc
+	flex(mid)
+	a
+		color #00b0dc
+		margin 0 10px
+		width 40px
+		height 40px
+		border 1px solid #00b0dc
+		border-radius 50%
+		text-align center
+		font-size 28px
+		line-height 38px
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.slider-el
+		height 50vw
+		
+
+.modal-wraper
+	+below(768px)
+		width 90%
+	position relative
+	display none
+	width 60%
+	background white
+	.fa
+		position absolute
+		top 10px
+		right 10px
+.modal-main-cont
+	f()
+	fw()
+.modal-text
+	+below(1024px)
+		width 100%
+	width 40%
+	padding 20px
+	color white
+	background #478BE8
+	flex(mid)
+	fl()
+.modal-title
+	text-align center
+	text-transform uppercase
+	margin-bottom 10px
+	font-weight 600
+.modal-content
+	text-align center
+	
+.modal-form
+	+below(1024px)
+		width 100%
+		display none
+	padding 20px
+	width 60%
+	label
+		display block
+		font-size 12px
+		margin-bottom 5px
+	textarea
+		width 100%
+	input
+		margin-bottom 5px
+		width 100%
+	input,textarea
+		padding 5px
+		border 0px
+		border 1px solid #e1e1e1
+	button
+		border 0px
+		background white
+		text-transform uppercase
+		margin 20px auto
+		display block
+		border 1px solid #e1e1e1
+		border-radius 10px
+		padding 5px 10px
+	ul
+		padding 0
+		margin 0
+		li
+			list-style none
+.modal-form-title
+	text-align center
+	text-transform uppercase
+	margin-bottom 10px
+	font-weight 600
+.modal-form-text
+	
+	font-size 12px
+	text-align center
+	width 60%
+	margin 0 auto
+	margin-bottom 10px
+.form-left
+	+below(1024px)
+		width 100%
+	width 48%
+.form-right
+	+below(1024px)
+		width 100%
+	width 48%
+.textarea-label
+	margin-top 20px
+.form-wrap
+	flex(between)
+	align-items flex-start
+	fw()
+.bootstrap-datetimepicker-widget
+	background white
+	width 100%
+	font-size 12px
+	
+.get-eks-info
+	+below(1024px)
+		display block
+	border 0px
+	text-transform uppercase
+	margin 20px auto
+	border 1px solid #e1e1e1
+	border-radius 10px
+	padding 5px 10px
+	display none
+	&:hover
+		cursor pointer
+		
