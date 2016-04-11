@@ -25,7 +25,12 @@ jeet.gutter = 1
 			&:hover
 				background #6D2D74
 				color white
-
+@font-face {
+	font-family: 'israil';
+	src:  url("../fonts/israil.woff") format('woff')
+	font-weight: normal;
+	font-style: normal;
+}
 body
 	font-family 'Ubuntu'
 	background: linear-gradient(to right, #036a77 0%, #fff 50%, #ffc39d 100%);
@@ -57,39 +62,48 @@ svg:not(:root)
 		left 0px
 		width 100%
 		flex(between)
-	flex(around)
+	flex(between)
 	position relative
-	/*&:before
+	&:before
 		content ''
+		+below(768px)
+			height 40px
 		position absolute
 		width 100%
-		height 6vw
+		height 65px
 		left 0px
 		top 0px 
-		bgi('first-page-bg.jpg')
+		//bgi('first-page-bg-top.jpg')
 		background-size cover
-		-webkit-filter: blur(20px);
-		filter: blur(20px);
-		z-index 1*/
+		background black
+		-webkit-filter: brightness(50%);
+		filter: brightness(50%);
+		z-index 1
+		opacity .4
 .header-soc
 	z-index 2
 	flex(mid)
 	+below(768px)
 		width 50%
 		justify-content flex-start
+	span
+		+below(768px)
+			display none
+		color white
+		
 	a
 		+below(768px)
-			width 30px
-			height 30px
-			font-size 20px
+			width 20px
+			height 20px
+			font-size 12px
 		color white
-		font-size 30px
+		font-size 22px
 		margin 10px
 		//padding 10px
 		border 1px solid white
 		border-radius 50%
-		width 50px
-		height 50px
+		width 40px
+		height 40px
 		display block
 		flex(mid)
 .header-logo
@@ -100,7 +114,7 @@ svg:not(:root)
 	flex(mid)
 .header-logo-el
 	margin 5px
-	min-width 30px
+	min-width 35px
 .header-content
 	flex(mid)
 	fl()
@@ -202,7 +216,7 @@ svg:not(:root)
 .slider-two
 	bgi('slider-item-2.jpg');
 .slider-three
-	bgi('slider-item-1.jpg');
+	bgi('slider-item-3.jpg');
 .owl-next,
 .owl-prev
 	position absolute
@@ -227,13 +241,18 @@ svg:not(:root)
 		text-align center
 	font-size 4vw
 	text-transform uppercase
+	font-weight 600
+	font-family 'israil'
 .slider-text
 	+below(768px)
 		font-size 12px
+		line-height 14px
 	width 60%
 	text-align center
 	margin-top 20px
-	
+	font-size: 1.1vw;
+	line-height: 1.6vw;
+	font-weight: lighter;
 .compare-block
 	+below(768px)
 		margin-top 20px
@@ -267,6 +286,8 @@ svg:not(:root)
 	text-align center
 	color white
 	text-transform uppercase
+	font-weight 600
+	font-family 'israil'
 .compare-block-text
 	+below(768px)
 		font-size 12px
@@ -291,6 +312,8 @@ svg:not(:root)
 	line-height: 4vw;
 	text-transform uppercase
 	text-align center
+	font-weight 600
+	font-family 'israil'
 .compare-block-content-text
 	+below(768px)
 		font-size 12px
@@ -404,6 +427,8 @@ svg:not(:root)
 	font-size: 3.8vw;
 	text-align center
 	text-transform uppercase
+	font-weight 600
+	font-family 'israil'
 .treangle-head-text
 	+below(768px)
 		font-size 12px
@@ -446,12 +471,13 @@ svg:not(:root)
 		width 100%
 		flex(mid)
 		fl()
-	width 40%
+	width 45%
 	margin-left 2%
 .travel-head-wraper-cont
 	padding-bottom 2vw
 	margin-bottom 2vw
 	border-bottom 2px solid white
+	width 100%
 .travel-head-title
 	+below(768px)
 		font-size 18px
@@ -459,7 +485,11 @@ svg:not(:root)
 	font-size 2vw
 	color white
 	margin-bottom 2vw
-//.travel-head-wraper
+	font-weight 600
+	font-family 'israil'
+.travel-head-wraper
+	flex(mid)
+	fl()
 .travel-head-el
 	flex(mid)
 	justify-content flex-start
@@ -500,7 +530,7 @@ svg:not(:root)
 		margin-bottom 20px
 		margin-top 20px
 	margin-top -4vw
-	width 20%
+	width 24%
 .travel-cont-el-title
 	position absolute
 	top 10px
@@ -514,6 +544,7 @@ svg:not(:root)
 		width 80%
 		text-align center
 		color white
+		font-size 1vw
 		b
 			display block
 			margin-bottom 10px

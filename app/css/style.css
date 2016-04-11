@@ -88,6 +88,12 @@ iframe {
   background: #6d2d74;
   color: #fff;
 }
+@font-face {
+  font-family: 'israil';
+  src: url("../fonts/israil.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: 'Ubuntu';
   background: -webkit-gradient(linear, left top, right top, from(#036a77), color-stop(50%, #fff), to(#ffc39d));
@@ -144,26 +150,15 @@ svg:not(:root) {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-/*&:before
-		content ''
-		position absolute
-		width 100%
-		height 6vw
-		left 0px
-		top 0px 
-		bgi('first-page-bg.jpg')
-		background-size cover
-		-webkit-filter: blur(20px);
-		filter: blur(20px);
-		z-index 1*/
 }
 @media only screen and (max-width: 768px) {
   .header {
@@ -183,6 +178,25 @@ svg:not(:root) {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+.header:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  left: 0px;
+  top: 0px;
+  background-size: cover;
+  background: #222;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  z-index: 1;
+  opacity: 0.4;
+}
+@media only screen and (max-width: 768px) {
+  .header:before {
+    height: 40px;
   }
 }
 .header-soc {
@@ -209,15 +223,23 @@ svg:not(:root) {
             justify-content: flex-start;
   }
 }
+.header-soc span {
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .header-soc span {
+    display: none;
+  }
+}
 .header-soc a {
   color: #fff;
-  font-size: 30px;
+  font-size: 22px;
   margin: 10px;
   border: 1px solid #fff;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: block;
   display: -webkit-box;
   display: -webkit-flex;
@@ -234,9 +256,9 @@ svg:not(:root) {
 }
 @media only screen and (max-width: 768px) {
   .header-soc a {
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
   }
 }
 .header-logo {
@@ -265,7 +287,7 @@ svg:not(:root) {
 }
 .header-logo-el {
   margin: 5px;
-  min-width: 30px;
+  min-width: 35px;
 }
 .header-content {
   display: -webkit-box;
@@ -516,7 +538,7 @@ svg:not(:root) {
   background: url("../img/slider-item-2.jpg") no-repeat;
 }
 .slider-three {
-  background: url("../img/slider-item-1.jpg") no-repeat;
+  background: url("../img/slider-item-3.jpg") no-repeat;
 }
 .owl-next,
 .owl-prev {
@@ -542,6 +564,8 @@ svg:not(:root) {
 .slider-title {
   font-size: 4vw;
   text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'israil';
 }
 @media only screen and (max-width: 768px) {
   .slider-title {
@@ -554,10 +578,14 @@ svg:not(:root) {
   width: 60%;
   text-align: center;
   margin-top: 20px;
+  font-size: 1.1vw;
+  line-height: 1.6vw;
+  font-weight: lighter;
 }
 @media only screen and (max-width: 768px) {
   .slider-text {
     font-size: 12px;
+    line-height: 14px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -599,6 +627,8 @@ svg:not(:root) {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'israil';
 }
 @media only screen and (max-width: 768px) {
   .compare-block-title {
@@ -635,6 +665,8 @@ svg:not(:root) {
   line-height: 4vw;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 600;
+  font-family: 'israil';
 }
 @media only screen and (max-width: 768px) {
   .compare-block-content-title {
@@ -841,6 +873,8 @@ svg:not(:root) {
   font-size: 3.8vw;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'israil';
 }
 @media only screen and (max-width: 768px) {
   .treangle-head-title {
@@ -934,7 +968,7 @@ svg:not(:root) {
   width: 100%;
 }
 .travel-head-info {
-  width: 40%;
+  width: 45%;
   margin-left: 2%;
 }
 @media only screen and (max-width: 768px) {
@@ -961,17 +995,37 @@ svg:not(:root) {
   padding-bottom: 2vw;
   margin-bottom: 2vw;
   border-bottom: 2px solid #fff;
+  width: 100%;
 }
 .travel-head-title {
   font-size: 2vw;
   color: #fff;
   margin-bottom: 2vw;
+  font-weight: 600;
+  font-family: 'israil';
 }
 @media only screen and (max-width: 768px) {
   .travel-head-title {
     font-size: 18px;
     text-align: center;
   }
+}
+.travel-head-wraper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 .travel-head-el {
   display: -webkit-box;
@@ -1059,7 +1113,7 @@ svg:not(:root) {
 }
 .travel-cont-el {
   margin-top: -4vw;
-  width: 20%;
+  width: 24%;
 }
 @media only screen and (max-width: 768px) {
   .travel-cont-el {
@@ -1091,6 +1145,7 @@ svg:not(:root) {
   width: 80%;
   text-align: center;
   color: #fff;
+  font-size: 1vw;
 }
 @media only screen and (max-width: 1024px) {
   .travel-cont-el-title span {
