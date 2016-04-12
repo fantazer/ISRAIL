@@ -213,6 +213,11 @@ svg:not(:root) {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 @media only screen and (max-width: 768px) {
   .header-soc {
@@ -262,7 +267,6 @@ svg:not(:root) {
   }
 }
 .header-logo {
-  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -275,6 +279,12 @@ svg:not(:root) {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 2;
 }
 @media only screen and (max-width: 768px) {
   .header-logo {

@@ -83,6 +83,8 @@ svg:not(:root)
 .header-soc
 	z-index 2
 	flex(mid)
+	width 50%
+	justify-content flex-start
 	+below(768px)
 		width 50%
 		justify-content flex-start
@@ -107,11 +109,13 @@ svg:not(:root)
 		display block
 		flex(mid)
 .header-logo
+	flex(mid)
+	width 50%
+	justify-content flex-end
 	+below(768px)
 		width 30%
 		justify-content flex-end
 	z-index 2
-	flex(mid)
 .header-logo-el
 	margin 5px
 	min-width 35px
