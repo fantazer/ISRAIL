@@ -237,6 +237,8 @@ svg:not(:root) {
   }
 }
 .header-soc a {
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
   color: #fff;
   font-size: 22px;
   margin: 10px;
@@ -265,6 +267,11 @@ svg:not(:root) {
     height: 20px;
     font-size: 12px;
   }
+}
+.header-soc a:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .header-logo {
   display: -webkit-box;
@@ -412,6 +419,8 @@ svg:not(:root) {
   }
 }
 .header-icon-img img {
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
@@ -419,6 +428,12 @@ svg:not(:root) {
     width: 40%;
     margin: 0 auto;
   }
+}
+.header-icon-img img:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
 }
 .header-icon-text {
   color: #fff;
