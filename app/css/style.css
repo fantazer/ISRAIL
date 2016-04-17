@@ -1225,6 +1225,9 @@ svg:not(:root) {
     margin-top: 10px;
   }
 }
+.travel-cont-el-but:hover {
+  cursor: pointer;
+}
 .travel-cont-el-but-active {
   background: #00b0dc;
   -webkit-box-shadow: 0px 4px 0px #2591ac;
@@ -1339,6 +1342,9 @@ svg:not(:root) {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.modal-wraper .fa:hover {
+  cursor: pointer;
 }
 .modal-main-cont {
   display: -webkit-box;
@@ -1505,4 +1511,39 @@ svg:not(:root) {
 }
 .get-eks-info:hover {
   cursor: pointer;
+}
+#date {
+  position: relative;
+}
+.datepicker {
+  position: absolute;
+  background: #f3f3f3;
+  font-size: 12px;
+}
+.modal-small-wraper {
+  position: relative;
+  display: none;
+  width: 25%;
+  background: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .modal-small-wraper {
+    width: 90%;
+  }
+}
+.modal-small-wraper .fa {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal-small-wraper .fa:hover {
+  cursor: pointer;
+}
+.modal-small-wraper .modal-form {
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .modal-small-wraper .modal-form {
+    display: block;
+  }
 }

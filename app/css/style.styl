@@ -570,6 +570,8 @@ svg:not(:root)
 		height 35px
 	+below(768px)
 		margin-top 10px
+	&:hover
+		cursor pointer
 	height 50px
 	border-radius: 2vw;
 	font-size: 1vw;
@@ -649,6 +651,8 @@ svg:not(:root)
 	width 60%
 	background white
 	.fa
+		&:hover
+			cursor pointer
 		position absolute
 		top 10px
 		right 10px
@@ -748,4 +752,30 @@ svg:not(:root)
 	display none
 	&:hover
 		cursor pointer
-		
+
+#date
+	position relative
+
+.datepicker
+	position absolute
+	background #f3f3f3
+	font-size 12px
+
+.modal-small-wraper
+	+below(768px)
+		width 90%
+	position relative
+	display none
+	width 25%
+	background white
+	.fa
+		&:hover
+			cursor pointer
+		position absolute
+		top 10px
+		right 10px
+	.modal-form
+		width 100%
+	.modal-form
+		+below(1024px)
+			display block

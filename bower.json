@@ -17,6 +17,7 @@
     "normalize.css": "~3.0.3",
     "bootstrap": "~3.3.5",
     "components-font-awesome": "~4.3.0",
-    "eonasdan-bootstrap-datetimepicker": "^4.17.37"
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "bootstrap-datepicker": "^1.6.0"
   }
 }

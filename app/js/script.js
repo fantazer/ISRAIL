@@ -34,17 +34,29 @@ $(document).ready(function(){
 	/* ###### init bpopup  ######*/
 	/* ###### bower i bpopup  ######*/
 
-	$('.header-title').click(function(){
+	$('.travel-cont-el-but-text').click(function(){
+		$('.modal-small-wraper').bPopup({
+				closeClass:'fa-times',
+				position:['auto','auto'], // position center
+				follow: [true,false],
+		}); 
+	})
+
+	$('.travel-head-button').click(function(){
 		$('.modal-wraper').bPopup({
 				closeClass:'fa-times',
 				position:['auto','auto'], // position center
 				follow: [true,false],
 		}); 
 	})
-	$('#date').datetimepicker({
-        locale: 'ru',
-        format: 'DD/MM/YYYY'
-    });
+
+	$('.date').datepicker({
+		language: 'ru',
+		orientation: "bottom"
+	});
+	$('#date').on('changeDate', function(ev){
+		    $(this).datepicker('hide');
+	});
 	$('.get-eks-info').click(function(){
 		$('.modal-text').slideToggle();
 		$('.modal-form').slideToggle();
